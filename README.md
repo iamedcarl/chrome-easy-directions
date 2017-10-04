@@ -1,13 +1,13 @@
 # Quick Directions
 
-A Chrome extension that will give you directions from your current location to your destination.
+A simple Chrome extension that will provide directions from your current location to your destination.
 
-This is a simple tool made to develop an understanding of how to make a Chrome extension, play with Google Maps, and use geolocation.
+This tool was made for me to develop an understanding of how to make a Chrome extension, play with Google Maps, and use geolocation.
 
 ### How it works
 ![screen](/screenshots/quick_directions.gif)
 
-In the `manifest.json`, I have declared permission for `geolocation` which allows the extension to use the HTML5 geolocation API without prompting user for permission. There is much more to the manifest file. For my purposes, I just needed to keep it simple.
+In the `manifest.json`, I have declared permissions for `geolocation` which allows the extension to use the HTML5 geolocation API without prompting the user for permission. There is much more to know about the manifest file which I will continue to learn on more projects.
 
 ```
 {
@@ -28,7 +28,9 @@ In the `manifest.json`, I have declared permission for `geolocation` which allow
 }
 ```
 
-Once the extension popup is opened, a call to `navigator.geolocation.getCurrentPosition()` is invoked. Upon success, the `parsePosition()` callback sets the value of the origin input field to the latitude and longitude of the user's location. The user is able to change that if their origin is a different starting point.
+Once the extension popup is opened, a call to `navigator.geolocation.getCurrentPosition()` is invoked. Upon success, the `parsePosition()` callback sets the value of the origin input field to the latitude and longitude of the user's location.
+
+NB: Users are able to change their origin location if they don't want directions from their current location. Just change the input field. 😃
 
 ```javascript
 // assets/js/popup.js
@@ -49,7 +51,7 @@ document.addEventListener("DOMContentLoaded",() => {
 });
 ```
 
-The user then enters the desired destination in the input field to get directions on Google Maps.
+The user then enters the desired destination in the input field to get directions on Google Maps. A static map is displayed with directions. Clicking on the `More options` link in the map will open up a new browser tab/window and redirect to Google Maps.
 
 Pretty simple... right? 😎
 
@@ -57,7 +59,7 @@ Pretty simple... right? 😎
 
 1. Open your Chrome browser and enter `chrome://extensions` to the url bar.
 2. Make sure `Developer Mode` is checked on the upper right corner.
-3. Clone this repo: `git clone https://github.com/iamedcarl/chrome-quick-directions.git`
+3. Clone repo: `git clone https://github.com/iamedcarl/chrome-quick-directions.git`
 4. Now click on `Load unpacked extension...` which is located at the top left.
 5. Navigate to where you cloned the repo and select the folder `chrome-quick-directions`.
 
