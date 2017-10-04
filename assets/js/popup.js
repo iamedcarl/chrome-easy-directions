@@ -10,7 +10,6 @@ iframe.setAttribute('allowFullScreen', '');
 const parsePosition = position => {
   const lat = position.coords.latitude;
   const lon = position.coords.longitude;
-  console.log(`${lat},${lon}`);
   originField.placeholder = `${lat},${lon}`;
   originField.value = `${lat},${lon}`;
 };
