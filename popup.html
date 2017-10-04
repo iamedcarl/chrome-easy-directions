@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Easy Directions</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/popup.css" />
+  </head>
+  <body>
+    <div id="map"></div>
+    <form id="directions-form" action="#">
+      <input id="input-org" placeholder="Enter your location" type="text" class="validate" name="origin">
+      <input id="input-dest" placeholder="Enter your destination" type="text" class="validate" name="destination">
+      <button class="btn waves-effect waves-light" id="submit-btn" type="submit" name="action">Submit</button>
+    </form>
+    <script src="assets/js/popup.js"></script>
+  </body>
+</html>

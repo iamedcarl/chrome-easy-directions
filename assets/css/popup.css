@@ -1,0 +1,9 @@
+body {
+  height: 100%;
+  width: 600px;
+  padding: 10px 10px;
+}
+
+form {
+  margin-top: 15px;
+}
