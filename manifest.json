@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
 
-  "name": "Easy Directions",
+  "name": "Quick Directions",
   "description": "This extension allows user to get directions from origin to destination.",
   "version": "1.0",
 

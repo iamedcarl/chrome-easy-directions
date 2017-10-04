@@ -1,9 +1,17 @@
 body {
-  height: 100%;
   width: 600px;
-  padding: 10px 10px;
+  padding: 0px 10px;
+}
+
+header > h1 {
+  font-size: 30px;
+  text-align: center;
 }
 
 form {
   margin-top: 15px;
+}
+
+footer {
+  margin-top: 10px;
 }
