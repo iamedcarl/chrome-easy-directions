@@ -4,7 +4,7 @@ A simple Chrome extension that will provide directions from your current locatio
 
 This tool was made for me to develop an understanding of how to make a Chrome extension, play with Google Maps, and use geolocation.
 
-### How it works
+## How it works
 ![screen](/screenshots/quick_directions.gif)
 
 In the `manifest.json`, I have declared permissions for `geolocation` which allows the extension to use the HTML5 geolocation API without prompting the user for permission. There is much more to know about the manifest file which I will continue to learn on more projects.
@@ -55,7 +55,7 @@ The user then enters the desired destination in the input field to get direction
 
 Pretty simple... right? 😎
 
-### Installing
+## Installing
 
 1. Open your Chrome browser and enter `chrome://extensions` to the url bar.
 2. Make sure `Developer Mode` is checked on the upper right corner.
@@ -69,6 +69,6 @@ If everything works out, you should be seeing your extension loaded like below.
 
 Click on the extension on the upper right side of your browser to try it out!
 
-#### References
+### References
 - [Google Maps API](https://developers.google.com/maps/)
 - [Google Chrome Extensions Docs](https://developer.chrome.com/extensions)
