@@ -2,7 +2,7 @@ let originField = document.getElementById('input-org');
 
 let iframe = document.createElement('iframe');
 iframe.width = "580px";
-iframe.height = "400px";
+iframe.height = "300px";
 iframe.frameborder = "0";
 iframe.setAttribute("style", "border:0");
 iframe.setAttribute('allowFullScreen', '');
@@ -24,10 +24,7 @@ const getLocation = () => {
 document.getElementById('directions-form').addEventListener('submit', (e) => {
   e.preventDefault();
   let origin = originField.value;
-  let destination = document.getElementById('input-dest')
-    .value
-    .split(" ")
-    .join("+");
+  let destination = document.getElementById('input-dest').value;
   let googleMaps = `https://www.google.com/maps/embed/v1/directions?key=AIzaSyC4c-rDo69YbyfuhOChRpKJAVk6ZLU_XIE&origin=${origin}&destination=${destination}`;
   iframe.setAttribute("src", googleMaps);
   document.getElementById('map').appendChild(iframe);
